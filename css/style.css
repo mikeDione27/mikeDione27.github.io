@@ -9,3 +9,10 @@ body {
 h1 {
   font-size: 2.4em;
 }
+
+.profile-pic {
+  width: 160px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
