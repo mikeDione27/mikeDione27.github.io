@@ -15,4 +15,7 @@ h1 {
   border-radius: 90%;
   margin: 20px 0;
 }
+.profile-text {
+  max-width: 500px;
+}
 
