@@ -50,8 +50,8 @@ a:hover {
 .profile {
   display: flex;
   align-items: center;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 60px;
+  margin-top: 60px;
   flex-wrap: wrap; /* pour mobile */
   justify-content: center;
 }
