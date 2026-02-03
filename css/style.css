@@ -164,3 +164,66 @@ h5.card-title {
 .contact-info a:hover {
   color: #ffffff;
 }
+
+/* Blocks / Cards section */
+.blocks {
+  margin-top: 60px;
+}
+
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+/* Card style similar to your screenshot */
+.block-card {
+  display: block;
+  text-decoration: none;
+
+  background: #cfe6f8;        /* bleu clair */
+  border-radius: 16px;
+  padding: 28px 26px;
+  text-align: center;
+
+  color: #0a2342;
+  box-shadow: 0 6px 18px rgba(10, 35, 66, 0.10);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.block-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.35rem;
+}
+
+.block-card p {
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.55;
+}
+
+/* Hover effect */
+.block-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(10, 35, 66, 0.16);
+}
+
+/* Two wide cards at the bottom */
+.block-card--wide {
+  grid-column: span 1;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .blocks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .blocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
