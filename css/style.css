@@ -227,3 +227,47 @@ h5.card-title {
   }
 }
 
+
+/* Publications page */
+.pub-section {
+  margin-top: 40px;
+}
+
+.pub-section h2 {
+  margin-bottom: 20px;
+}
+
+/* Accordion */
+.pub-item {
+  border: 1px solid #d9e6f2;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.pub-item summary {
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  background: #f2f7fc;
+}
+
+.pub-item[open] summary {
+  background: #d6e8fb;
+}
+
+.pub-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pub-content {
+  padding: 16px 20px;
+  line-height: 1.6;
+}
+
+.pub-content a {
+  font-weight: 600;
+}
+
