@@ -1,24 +1,118 @@
-<main>
-  <p><a class="back-link" href="index.html">← Back to home</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications — Michel Dione</title>
 
-  <h1>Publications</h1>
+  <!-- Bootstrap (pour l'accordéon + navbar) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
-  <section class="pub-section">
-    <h2>International Conferences</h2>
+  <!-- TON CSS -->
+  <link rel="stylesheet" href="css/style.css?v=30" />
+</head>
 
-    <!-- Accordéon -->
-    <details class="pub-item">
-      <summary>
-        Title of the paper — Conference Year
-      </summary>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
 
-      <div class="pub-content">
-        <p><strong>Authors:</strong> …</p>
-        <p><strong>Abstract:</strong> …</p>
-        <p><a href="#">Read the paper</a></p>
+      <a class="navbar-brand fw-bold" href="index.html">Michel Dione</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
+          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        </ul>
       </div>
-    </details>
+    </div>
+  </nav>
 
-    <!-- répéter -->
+  <!-- Hero -->
+  <header class="hero-section d-flex align-items-center">
+    <div class="container text-center text-white">
+      <!-- ⚠️ Mets ton image dans assets/ et renomme-la si possible -->
+      <img src="assets/IMG_6308 (2).jpg" alt="Michel Dione" class="profile-img mb-3">
+      <h1 class="display-4 fw-bold">Michel Dione</h1>
+      <p class="lead">PhD student in Artificial Intelligence — Deep Learning & Distributed Acoustic Sensing (DAS).</p>
+      <div class="contact-info">
+        <p>📍 IMT Nord Europe — France |
+          <a href="https://linkedin.com/in/michel-dione-68172422b" class="text-white text-decoration-underline" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Publications</h2>
+    <div class="accordion" id="publicationsAccordion">
+
+      <h4 class="mt-4">International Conferences</h4>
+
+      <!-- ✅ IDs uniques : heading-1 / collapse-1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-1">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapse-1"
+                  aria-expanded="false" aria-controls="collapse-1">
+            Title of your paper — Conference Year
+          </button>
+        </h2>
+        <div id="collapse-1" class="accordion-collapse collapse"
+             aria-labelledby="heading-1" data-bs-parent="#publicationsAccordion">
+          <div class="accordion-body">
+            <strong>Authors:</strong> Michel Dione, Co-authors<br>
+            <strong>Abstract:</strong> Your abstract here...<br>
+            <a href="#" target="_blank" rel="noopener">Read the paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ deuxième papier : heading-2 / collapse-2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapse-2"
+                  aria-expanded="false" aria-controls="collapse-2">
+            Another paper title — Conference Year
+          </button>
+        </h2>
+        <div id="collapse-2" class="accordion-collapse collapse"
+             aria-labelledby="heading-2" data-bs-parent="#publicationsAccordion">
+          <div class="accordion-body">
+            <strong>Authors:</strong> Michel Dione, Co-authors<br>
+            <strong>Abstract:</strong> Your abstract here...<br>
+            <a href="#" target="_blank" rel="noopener">Read the paper</a>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-5">Journals</h4>
+      <!-- même logique : heading-3 / collapse-3, etc. -->
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-primary">⬅️ Back to Home</a>
+    </div>
   </section>
-</main>
+
+  <!-- Footer -->
+  <footer class="footer text-white text-center py-3 mt-auto" style="background-color: #212529;">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Michel Dione. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (obligatoire pour accordéon/navbar) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
