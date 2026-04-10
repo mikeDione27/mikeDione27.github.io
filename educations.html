@@ -1,136 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Education — Michel Dione</title>
+<!-- ✅ CONTENU SPÉCIFIQUE EDUCATION -->
+<section class="container py-5">
+  <h2 class="text-center mb-5 fw-bold display-5">Formation & Experience</h2>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- PhD -->
+  <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-primary">2023 – Present · PhD in Artificial Intelligence</h5>
+      <h6 class="text-muted">IMT Nord Europe — University of Lille, France</h6>
 
-  <!-- CSS commun -->
-  <link rel="stylesheet" href="css/style.css?v=31" />
-</head>
-
-<body>
-
-  <!-- ✅ NAVBAR IDENTIQUE À publications.html -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Home</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-          <li class="nav-item"><a class="nav-link active" href="educations.html">Formation & Experience</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ✅ HERO IDENTIQUE À publications.html -->
-  <header class="hero-section d-flex align-items-center">
-    <div class="container text-center text-white">
-      <img src="assets/IMG_6308 (2).jpg" alt="Photo of Michel Dione" class="profile-pic">
-      <h1 class="display-4 fw-bold">Michel Dione</h1>
-      <p class="lead">
-        PhD student in Artificial Intelligence — Deep Learning & Distributed Acoustic Sensing (DAS).
+      <p class="card-text mt-3 fs-5">
+        PhD research on <strong>Distributed Acoustic Sensing (DAS)</strong> and 
+        <strong>Deep Learning</strong> for large-scale acoustic event recognition.
+        Focus on designing efficient <strong>Transformer-based architectures</strong> 
+        and <strong>Mixture-of-Experts (MoE)</strong> models for real-world applications 
+        (smart roads, railway monitoring, perimeter security, marine bioacoustics).
       </p>
-      <div class="contact-info">
-        <p>
-          📍 IMT Nord Europe — France |
-          <a href="https://linkedin.com/in/michel-dione-68172422b"
-             class="text-white text-decoration-underline"
-             target="_blank" rel="noopener">
-            LinkedIn
-          </a>
-        </p>
-      </div>
+
+      <p class="mt-3 fw-semibold mb-1">Research Contributions:</p>
+      <ul>
+        <li>Development of <strong>DAStatFormer</strong> (feature-based Transformer for DAS)</li>
+        <li>Design of <strong>DASTMoE</strong> (multi-domain Mixture-of-Experts model)</li>
+        <li>State-of-the-art performance on ϕ-OTDR datasets</li>
+        <li>Real-world deployments on traffic monitoring datasets</li>
+      </ul>
+
+      <p class="mt-3 fw-semibold mb-1">Keywords:</p>
+      <ul class="mb-0">
+        <li>Spatio-temporal representations (waterfall / time-frequency)</li>
+        <li>Transformers & attention mechanisms</li>
+        <li>Mixture-of-Experts (MoE)</li>
+        <li>Robust detection under noise and domain shifts</li>
+      </ul>
     </div>
-  </header>
+  </div>
 
-  <!-- PhD candidate specializing in Distributed Acoustic Sensing (DAS) and Deep Learning for spatio-temporal signal analysis. My research focuses on designing efficient Transformer-based architectures and Mixture-of-Experts (MoE) models for large-scale acoustic monitoring of infrastructures and environments.
+  <!-- Master -->
+  <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-primary">2021 – 2023 · Master’s Degree in Statistical Engineering – Data Science</h5>
+      <h6 class="text-muted">University of Lille — France</h6>
 
-My work aims to address high-dimensionality challenges in DAS data through feature engineering, attention mechanisms, and lightweight architectures -->
+      <p class="card-text mt-3 fs-5">
+        Advanced training in <strong>machine learning</strong>, <strong>data science</strong>, 
+        and <strong>statistical modeling</strong>, with applications to real-world datasets.
+      </p>
 
-  <!-- ✅ CONTENU SPÉCIFIQUE EDUCATION -->
- <section class="container py-5">
-    <h2 class="text-center mb-5 fw-bold display-5">Formation & Experience</h2>
+      <p class="mt-3 fw-semibold mb-1">Key Projects:</p>
+      <ul>
+        <li>Comparative study of ML models (Logistic Regression, Random Forest, SVM, K-Means, SuperLearner)</li>
+        <li>Reinforcement learning: BipedalWalker problem</li>
+        <li>Time series analysis: agricultural price index (wheat)</li>
+        <li>Optimization: simulated annealing for combinatorial problems</li>
+      </ul>
 
-    <!-- PhD -->
-    <div class="card shadow-sm border-0 mb-4">
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">2023 – Present · PhD in Artificial Intelligence</h5>
-        <h6 class="text-muted">IMT Nord Europe — France</h6>
-
-        <p class="card-text mt-3 fs-5">
-          Research on <strong>Distributed Acoustic Sensing (DAS)</strong> and <strong>Deep Learning</strong> for acoustic event recognition
-          (smart roads, railway monitoring, perimeter surveillance, marine bioacoustics).
-        </p>
-
-        <p class="mt-3 fw-semibold mb-1">Keywords:</p>
-        <ul class="mb-0">
-          <li>Spatio-temporal representations (waterfall / time-frequency)</li>
-          <li>CNNs and Transformers for long sequences</li>
-          <li>Robust detection under noise and domain shifts</li>
-        </ul>
-      </div>
+      <p class="mb-0">
+        <strong>Relevant courses:</strong> Machine Learning, Deep Learning, Signal Processing, Optimization, Statistics
+      </p>
     </div>
+  </div>
 
-    <!-- Master -->
-    <div class="card shadow-sm border-0 mb-4">
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">2021 – 2023 · Master’s Degree</h5>
-        <h6 class="text-muted">University of Lille / School — Country</h6>
-        <p class="card-text mt-3 fs-5">
-          Brief description of your program (specialization, thesis/project).
-        </p>
-        <p class="mb-0"><strong>Relevant courses:</strong> Machine Learning, Signal Processing, Deep Learning…</p>
-      </div>
+  <!-- Bachelor -->
+  <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-primary">2020 – 2021 · Bachelor’s Degree in Mathematics</h5>
+      <h6 class="text-muted">University of Lille — France</h6>
+
+      <p class="card-text mt-3 fs-5">
+        Solid foundation in <strong>mathematics</strong>, including analysis, algebra, probability, 
+        and statistics, forming the basis for advanced studies in data science and AI.
+      </p>
+
+      <p class="mb-0">
+        <strong>Highlights:</strong> Mathematical modeling, probability theory, statistical analysis
+      </p>
     </div>
+  </div>
 
-    <!-- Bachelor -->
-    <div class="card shadow-sm border-0 mb-4">
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">2020 – 2021 · Bachelor / Engineering Degree</h5>
-        <h6 class="text-muted">University / School — Country</h6>
-        <p class="card-text mt-3 fs-5">
-          Brief description (major, key topics, internship/project).
-        </p>
-        <p class="mb-0"><strong>Highlights:</strong> internships, projects, awards.</p>
-      </div>
+  <!-- Experience -->
+  <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-primary">Professional Experience</h5>
+
+      <p class="mt-3 mb-1 fw-semibold">Data Scientist Intern — IMT Nord Europe</p>
+      <ul>
+        <li>Developed classification methods for non-stationary data</li>
+        <li>Designed LSTM-based anomaly detection models</li>
+        <li>Implemented full pipelines in Python</li>
+      </ul>
+
+      <p class="mt-3 mb-1 fw-semibold">Academic Tutor — APSC Lille</p>
+      <ul>
+        <li>Tutored students in mathematics and physics</li>
+      </ul>
+
+      <p class="mt-3 mb-1 fw-semibold">Production Operator — Elis Lille</p>
+      <ul>
+        <li>Quality control, sorting, and logistics operations</li>
+      </ul>
     </div>
+  </div>
 
-    <!-- Optional
-    <div class="card shadow-sm border-0 mb-4">
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">Certifications (optional)</h5>
-        <p class="card-text mt-3 fs-5 mb-0">
-          Add certifications here (Coursera / edX / AWS / etc.).
-        </p>
-      </div>
-    </div> -->
-
-    <div class="text-center mt-5">
-      <a href="index.html" class="btn btn-primary">⬅️ Back to Home</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-white text-center py-3 mt-auto" style="background-color: #212529;">
-    <div class="container">
-      <p class="mb-0">&copy; 2026 Michel Dione. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  <div class="text-center mt-5">
+    <a href="index.html" class="btn btn-primary">⬅️ Back to Home</a>
+  </div>
+</section>
